@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.movie-container {
+    margin: 20px 0;
+}
+
+.movie-container select {
+    background-color: white;
+    border: 2px solid #242333;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.showcase {
+    background-color: rgba(0, 0, 0, 0.15);
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    color: #777;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 20px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 20px;
+}
+
+.seat.selected {
+    background-color: #429fa8;
+}
+
+.seat.occupied {
+    background-color: white;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.container {
+    margin: 20px 0;
+    perspective: 1000px;
+    margin-bottom: 40px;
+}
+
+.screen {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    margin: 20px 0;
+    transform: rotateX(-45deg)
+}
+
+.row {
+    display: flex;
+}
+
+p.text span {
+    color: #53c6d1;
+}
